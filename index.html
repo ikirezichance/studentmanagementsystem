@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Student Management</h1>
+
+  <form id="studentForm">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="text" id="regno" placeholder="Registration Number" required />
+    <input type="date" id="dob" required />
+    <input type="number" id="marks" placeholder="Marks" required />
+    <input type="text" id="level" placeholder="Level" required />
+    <button type="submit">Add Student</button>
+  </form>
+
+  <h2>Student List</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Reg No</th>
+        <th>DOB</th>
+        <th>Marks</th>
+        <th>Level</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
